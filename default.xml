@@ -2,6 +2,10 @@
 <manifest>
   <default sync-j="1" revision="nanbield"/>
   <remote fetch="https://git.yoctoproject.org/git" name="yocto"/>
+  <remote fetch="https://github.com/filhoDaMain" name="filhoDaMain"/>
 
   <project remote="yocto" name="poky" path="pokytos"/>
+  <project remote="filhoDaMain" name="meta-pokytos" path="pokytos/meta-pokytos">
+    <linkfile src="scripts/pokytos-env" dest="pokytos/pokytos-env"/>
+  </project>
 </manifest>
