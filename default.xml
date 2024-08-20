@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <default sync-j="1" revision="nanbield"/>
-  <remote fetch="https://git.yoctoproject.org/git" name="yocto"/>
-  <remote fetch="https://github.com/filhoDaMain" name="filhoDaMain"/>
+    <default sync-j="1" revision="nanbield"/>
+    <remote fetch="https://git.yoctoproject.org/git" name="yocto"/>
+    <remote fetch="https://github.com/filhoDaMain" name="filhoDaMain"/>
+    <remote fetch="https://git.openembedded.org" name="openembedded"/>
 
-  <project remote="yocto" name="poky" path="pokytos"/>
-  <project remote="filhoDaMain" name="meta-pokytos" path="pokytos/meta-pokytos">
-    <linkfile src="scripts/pokytos-env" dest="pokytos/pokytos-env"/>
-  </project>
+    <project remote="yocto" name="poky" path="pokytos"/>
+    <project remote="filhoDaMain" name="meta-pokytos" path="pokytos/meta-pokytos">
+        <linkfile src="scripts/pokytos-env" dest="pokytos/pokytos-env"/>
+    </project>
+    <project remote="yocto" name="meta-raspberrypi" path="pokytos/meta-raspberrypi"/>
+    <project remote="openembedded" name="meta-openembedded" path="pokytos/meta-openembedded"/>
 </manifest>
