@@ -7,8 +7,10 @@
 
     <project remote="yocto" name="poky" path="pokytos"/>
     <project remote="filhoDaMain" name="meta-pokytos" path="pokytos/meta-pokytos">
-        <linkfile src="scripts/pokytos-env" dest="pokytos/pokytos-env"/>
+        <linkfile src="scripts/pokytos-bitbake-env" dest="pokytos/pokytos-env"/>
+        <linkfile src="scripts" dest="pokytos/pokytos-scripts"/>
     </project>
+    <project remote="filhoDaMain" name="meta-pokytos-bsp" path="pokytos/meta-pokytos-bsp"/>
     <project remote="yocto" name="meta-raspberrypi" path="pokytos/meta-raspberrypi"/>
     <project remote="openembedded" name="meta-openembedded" path="pokytos/meta-openembedded"/>
 </manifest>
