@@ -4,31 +4,37 @@
 
 ### Quick reference
 **Cloning the project:**
-```
+```Bash
 $ repo init -b nanbield -m default.xml -u https://github.com/filhoDaMain/pokytos.git
 $ repo sync
 ```
+<br/>
 
 **Building an image:**
-```
+> [!TIP]
+> I recommend using a Docker image for this. <br/>
+> Check my custom [pokytos-builder](https://github.com/filhoDaMain/pokytos-builder) set up for Yocto builds.
+
+```Bash
 $ cd pokytos
 $ source pokytos-env
 $ bitbake pokytos-console-image
 ```
+<br/>
 
 **Running an image on QEMU:**
-```
+```Bash
 $ runqemu pokytos-console-image nographic slirp
 ```
+<br/>
+
 ---
+<br/>
 
 # About Pokytos
-Pokytos is a small Yocto distribution that I created to easily store my changes to **Poky** (that I've been kepting arround locally on my PC) in order to build an image **suitable for embedded Linux kernel development/debugging**. Needless to say it's extensivily based on Poky distro :)
+**Pokytos** is a small Yocto distribution that I created to store my changes to **Poky** in order to build an image suitable for **embedded Linux kernel development / debugging**.
 
-My aim was to create a distro which enabled me to easily apply or disable all required Linux configurations to support interactive debugigng with KGDB, for both kernel and loadable modules debugigng.
-
-I'm currently using a raspberrypi3 and QEMU (arm) to test these changes, so, for now, these are the "officialy unoficial" supported platforms.
+Currently I've been testing this distro in QEMU and raspberrypi3.
 
 # How-tos
-
 A comprehensive [Wiki](https://github.com/filhoDaMain/pokytos/wiki) is currently in progress.
