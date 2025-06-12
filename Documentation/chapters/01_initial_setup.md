@@ -84,6 +84,27 @@ $ repo sync
 Usually you only **repo init** once and **repo sync** always prior to start developing changes.
 
 This way you work always with the most updated version of the Project.
+<br/>
 
 
 ## Build First Image
+
+To test our initial setup we will compile a simple image for an emulated target - **qemuarm** . No extra configuration is needed, as this is the default **target MACHINE**.
+
+> [!TIP]
+> I recommend using a Docker image for this. <br/>
+> Check my custom [pokytos-builder](https://github.com/filhoDaMain/pokytos-builder) set up for Yocto builds.
+
+```Bash
+# From ~/repos/pokytos-yocto (or after launching pokytos-builder)
+$ cd pokytos
+$ source pokytos-env
+$ bitbake pokytos-console-image
+```
+
+To test the image run (in the same shell where pokytos-env was sourced)
+```Bash
+$ runqemu qemuarm nographic slirp
+```
+
+To exit the emulated device shell: `(Ctrl + A) then X`
