@@ -68,7 +68,7 @@ $ cd ~/repos/pokytos-yocto
 # * Manifests repo URL: https://github.com/filhoDaMain/pokytos.git
 # * Which branch: nanbield
 # * Which Manifest to use: default.xml
-repo init -b nanbield -m default.xml -u https://github.com/filhoDaMain/pokytos.git
+$ repo init -b nanbield -m default.xml -u https://github.com/filhoDaMain/pokytos.git
 ```
 This will create directory `~/repos/pokytos-yocto/.repo`, where the manifests repo is cloned and meta-data used by the tool created.
 <br/>
