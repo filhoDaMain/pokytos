@@ -1,5 +1,8 @@
 # Development Environment
 
+1. [My setup](#my-setup)
+1. [VSCode configuration](#vscode-configuration)
+
 ## My setup
 
 * Headless (no GUI) Debian 12 (bookworm)
@@ -20,6 +23,10 @@
 * pokytos-yocto/meta-pokytos-bsp
 * pokytos-yocto/meta-raspberrypi
 * pokytos-yocto/meta-yocto-bsp
+
+![workspace](../res/workspace.png)
+
+<br/>
 
 VSCode Plugins:
 * [Yocto Project BitBake](https://marketplace.visualstudio.com/items?itemName=yocto-project.yocto-bitbake)
