@@ -7,3 +7,4 @@
 2. [Development Environment](./chapters/02_dev_environment.md)
     1. [My setup](./chapters/02_dev_environment.md#my-setup)
     2. [VSCode configuration](./chapters/02_dev_environment.md#vscode-configuration)
+3. [Supported Devices](./chapters/03_supported_devices.md)

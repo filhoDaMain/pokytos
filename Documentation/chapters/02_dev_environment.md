@@ -1,5 +1,6 @@
 # Development Environment
 
+## Index
 1. [My setup](#my-setup)
 1. [VSCode configuration](#vscode-configuration)
 
