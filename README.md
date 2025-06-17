@@ -32,9 +32,9 @@ $ runqemu pokytos-console-image nographic slirp
 <br/>
 
 # About Pokytos
-**Pokytos** is a small Yocto distribution that I created to store my changes to **Poky** in order to build an image suitable for **embedded Linux kernel development / debugging**.
+**Pokytos** is a small Yocto distribution that I started developing to store my customizations to build a Linux image suitable for Kernel hacking, learning and debugging.
 
 Currently I've been testing this distro in QEMU and raspberrypi3.
 
 # How-tos
-A comprehensive [Wiki](https://github.com/filhoDaMain/pokytos/wiki) is currently in progress.
+Have a look in the current [Pokytos Reference Manual](./Documentation/README.md).
