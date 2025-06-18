@@ -62,6 +62,7 @@ NOTE: The SD Card image has **.wic** suffix
     $ cd ~/repos/pokytos-yocto/pokytos/build/tmp/deploy/images/raspberrypi3
     $ sudo dd if=pokytos-console-image-raspberrypi3.rootfs.wic of=/dev/sda status=progress
     ```
+</br>
 
 3. Plug the SD Card into the target's SD Card Slot and power the device on
 
@@ -73,3 +74,7 @@ If **MACHINE** was set to one of the available [emulated devices](./03_supported
 ```Bash
 $ runqemu <MACHINE> nographic slirp
 ```
+
+To exit the emulated device shell: `(Ctrl + A) then X`
+
+![runqemu](../res/runqemu.gif)
