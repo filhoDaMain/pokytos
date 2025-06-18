@@ -12,7 +12,7 @@ MACHINE = "raspberrypi3"
 
 **NOTE:** The default MACHINE variable (qemuarm) comes from `meta-pokytos/conf/templates/default/local.conf.sample`, which you can customize to make it version controlled.
 
-**List of Tested Devices**
+### List of Tested Devices
  
 | MACHINE      | Defined in Layer | Device                                              |
 | ------------ | ---------------- | --------------------------------------------------- |

@@ -2,7 +2,7 @@
 
 ## Index
 1. [My setup](#my-setup)
-1. [VSCode configuration](#vscode-configuration)
+2. [VSCode configuration](#vscode-configuration)
 
 ## My setup
 
