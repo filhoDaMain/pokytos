@@ -6,3 +6,4 @@
 3. [Supported Devices](./chapters/03_supported_devices.md)
 4. [Image Build Process](./chapters/04_image_build_process.md#index)
 5. [Multiconfig builds - Release vs Developer](./chapters/05_multiconfig_builds.md)
+6. [SDK - Cross Development Workflows](./chapters/06_sdk_cross_development.md)
