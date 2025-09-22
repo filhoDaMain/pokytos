@@ -4,6 +4,7 @@
     <remote fetch="https://git.yoctoproject.org/git" name="yocto"/>
     <remote fetch="https://github.com/filhoDaMain" name="filhoDaMain"/>
     <remote fetch="https://git.openembedded.org" name="openembedded"/>
+    <remote fetch="https://github.com/linux-sunxi" name="linux-sunxi"/>
 
     <project remote="yocto" name="poky" path="pokytos"/>
     <project remote="filhoDaMain" name="meta-pokytos" path="pokytos/meta-pokytos">
@@ -12,7 +13,9 @@
     </project>
     <project remote="filhoDaMain" name="meta-pokytos-bsp" path="pokytos/meta-pokytos-bsp"/>
     <project remote="yocto" name="meta-raspberrypi" path="pokytos/meta-raspberrypi"/>
+    <project remote="yocto" name="meta-arm" path="pokytos/meta-arm"/>
     <project remote="openembedded" name="meta-openembedded" path="pokytos/meta-openembedded"/>
+    <project remote="linux-sunxi" name="meta-sunxi" path="pokytos/meta-sunxi"/>
 
     <!-- This is a VSCode configuration to help with KGDB support. It's not mandatory to check out. -->
     <project remote="filhoDaMain" name="pokytos-vscode" path=".vscode"/>
