@@ -30,8 +30,8 @@ Install `cgdb` in Host machine.
 
 Start application (e.g `helloworld`) in target using **gdbserver**
 ```bash
-# Use an available port (e.g. 2000)
-$ gdbserver :2000 ./helloworld
+# Use an available port (e.g. 2001)
+$ gdbserver :2001 ./helloworld
 
 # gdbserver will wait for a connection on that port
 ```
@@ -50,7 +50,16 @@ $ arm-poky-linux-gnueabi-gdb helloworld
 **From GDB interactive shell:**
 ```bash
 # Inside GDB, connect to remote target
-# Use IP:port (e.g. host pi and port 2000)
->> target remote pi:2000
+# Use IP:port (e.g. host pi and port 2001)
+>> target remote pi:2001
 ```
 
+### VSCode Frontend Configuration
+
+Install [Native Debug](https://marketplace.visualstudio.com/items?itemName=webfreak.debug) extension.
+
+Recommended: install [C/C++](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools) extension.
+
+For a complete setup follow the example from [helloworld_debug](https://github.com/filhoDaMain/helloworld_debug).
+
+Copy the `.vscode` from the Reference App to your application's VSCode Workspace and adapt paths accordingly.
