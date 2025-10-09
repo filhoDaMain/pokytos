@@ -7,3 +7,5 @@
 4. [Image Build Process](./chapters/04_image_build_process.md#index)
 5. [Multiconfig builds - Release vs Developer](./chapters/05_multiconfig_builds.md)
 6. [SDK - Cross Development Workflows](./chapters/06_sdk_cross_development.md)
+    1. [Applications Development](./chapters/061_app_development.md)
+    2. [Kernel Drivers Development](./chapters/062_kernel_drivers_development.md)

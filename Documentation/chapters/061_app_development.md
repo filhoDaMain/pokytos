@@ -1,4 +1,4 @@
-# App Development
+# Applications Development
 
 ## Cross compilation
 1. Generate and install an SDK - see [here](./06_sdk_cross_development.md#quick-reference).

@@ -1,4 +1,4 @@
-# Kernel drivers development
+# Kernel Drivers Development
 This page describes how to cross develop **out-of-tree** modules for the Linux Kernel using the **Pokytos SDK**.
 
 ## Prepare the SDK for out-of-tree module build
