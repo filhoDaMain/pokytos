@@ -2,7 +2,7 @@
 
 Multiconfigs allow to build the same image with an alternate configuration. This is specially interesting during **development** when some debugging utilities make sense to be included but not during production.
 
-Pokytos meta layer includes a [**developer**](https://github.com/filhoDaMain/meta-pokytos/blob/nanbield/conf/multiconfig/developer.conf) alternate configuration.
+Pokytos meta layer includes a [**developer**](https://github.com/filhoDaMain/meta-pokytos/blob/scarthgap/conf/multiconfig/developer.conf) alternate configuration.
 
 ## Quick reference
 Production / Release image:
@@ -17,16 +17,16 @@ $ bitbake mc:developer:pokytos-console-image
 
 ## How it works
 
-Sourcing the [**pokytos/pokytos-env**](https://github.com/filhoDaMain/meta-pokytos/blob/nanbield/scripts/pokytos-bitbake-env) applies the base configuration from [local.conf.sample](https://github.com/filhoDaMain/meta-pokytos/blob/nanbield/conf/templates/default/local.conf.sample), by creating a **build/conf/local.conf** with same contents.
+Sourcing the [**pokytos/pokytos-env**](https://github.com/filhoDaMain/meta-pokytos/blob/scarthgap/scripts/pokytos-bitbake-env) applies the base configuration from [local.conf.sample](https://github.com/filhoDaMain/meta-pokytos/blob/scarthgap/conf/templates/default/local.conf.sample), by creating a **build/conf/local.conf** with same contents.
 
-[**developer.conf**](https://github.com/filhoDaMain/meta-pokytos/blob/nanbield/conf/multiconfig/developer.conf) is a multiconfig file which adds '**developer**' as a MACHINEOVERRIDES
+[**developer.conf**](https://github.com/filhoDaMain/meta-pokytos/blob/scarthgap/conf/multiconfig/developer.conf) is a multiconfig file which adds '**developer**' as a MACHINEOVERRIDES
 ```bash
 MACHINEOVERRIDES:append = ":developer"
 ```
 
 Recipes which need to differente between release and developer builds can use the **developer** override.
 
-*Eg.*, the [**linux-stable**](https://github.com/filhoDaMain/meta-pokytos-bsp/blob/nanbield/recipes-kernel/linux/linux-stable/include/raspberrypi3.inc) recipe adds extra debugging kernel configurations only when this recipe is built for a **developer** image by <ins>making use the override syntax</ins> as follows:
+*Eg.*, the [**linux-stable**](https://github.com/filhoDaMain/meta-pokytos-bsp/blob/scarthgap/recipes-kernel/linux/linux-stable/include/raspberrypi3.inc) recipe adds extra debugging kernel configurations only when this recipe is built for a **developer** image by <ins>making use the override syntax</ins> as follows:
 ```bash
 SRC_URI:append:developer = "\
     file://debug.cfg \

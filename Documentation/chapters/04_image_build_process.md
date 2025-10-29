@@ -25,7 +25,7 @@ Build an image, by "bitbaking" the respective Image recipe.
 
 | Image (recipe)   | Notes                                                                        |
 | ------------------------ | ---------------------------------------------------------------------------- |
-| [pokytos-console-image](https://github.com/filhoDaMain/meta-pokytos/blob/nanbield/recipes-core/images/pokytos-console-image.bb)    | A Linux image with basic functionality to boot into userspace. Console only. |
+| [pokytos-console-image](https://github.com/filhoDaMain/meta-pokytos/blob/scarthgap/recipes-core/images/pokytos-console-image.bb)    | A Linux image with basic functionality to boot into userspace. Console only. |
 
 </br>
 

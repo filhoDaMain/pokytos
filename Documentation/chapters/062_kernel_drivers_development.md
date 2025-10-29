@@ -66,7 +66,7 @@ You need to compile the kernel with certain debugging facilities enabled!
 ### Build with KGDB support
 [Offical Guide!](https://docs.kernel.org/process/debugging/kgdb.html)
 
-To simplify, **pokytos-console-image-developer** already enables the necessary kernel features to allow KGDB debugging. Just build the [developer image](./05_multiconfig_builds.md#quick-reference) to pull the correct debug kernel configuration ([example](https://github.com/filhoDaMain/meta-pokytos-bsp/blob/nanbield/recipes-kernel/linux/files/rpi/debug.cfg))
+To simplify, **pokytos-console-image-developer** already enables the necessary kernel features to allow KGDB debugging. Just build the [developer image](./05_multiconfig_builds.md#quick-reference) to pull the correct debug kernel configuration ([example](https://github.com/filhoDaMain/meta-pokytos-bsp/blob/scarthgap/recipes-kernel/linux/files/rpi/debug.cfg))
 
 ```bash
 # Build and Flash a Developer Image

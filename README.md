@@ -5,7 +5,7 @@
 ### Quick reference
 **Cloning the project:**
 ```Bash
-$ repo init -b nanbield -m default.xml -u https://github.com/filhoDaMain/pokytos.git
+$ repo init -b scarthgap -m default.xml -u https://github.com/filhoDaMain/pokytos.git
 $ repo sync
 ```
 <br/>

@@ -12,7 +12,7 @@
 
 **Pokytos** depends on multiple [Yocto Meta Layers](https://docs.yoctoproject.org/current/overview-manual/yp-intro.html#the-yocto-project-layer-model), which are cloned as separate git repositories.
 
-The full list of git repositories is defined in a [*Manifest*](https://github.com/filhoDaMain/pokytos/blob/nanbield/default.xml) file which describes:
+The full list of git repositories is defined in a [*Manifest*](https://github.com/filhoDaMain/pokytos/blob/scarthgap/default.xml) file which describes:
 - The URL of each git repo to be cloned;
 - Which branches or fixed-commit hashes to checkout;
 - Where to clone each git repo.
@@ -49,7 +49,7 @@ $ repo --version
 ```
 <br/>
 
-Now with **repo** tool installed we can use the [*Manifest*](https://github.com/filhoDaMain/pokytos/blob/nanbield/default.xml) to clone all repositories.
+Now with **repo** tool installed we can use the [*Manifest*](https://github.com/filhoDaMain/pokytos/blob/scarthgap/default.xml) to clone all repositories.
 
 In "**repo world**" this is done in 2 steps:
 - **Initialize the repo**
@@ -66,9 +66,9 @@ $ cd ~/repos/pokytos-yocto
 
 # Initialize the repo
 # * Manifests repo URL: https://github.com/filhoDaMain/pokytos.git
-# * Which branch: nanbield
+# * Which branch: scarthgap
 # * Which Manifest to use: default.xml
-$ repo init -b nanbield -m default.xml -u https://github.com/filhoDaMain/pokytos.git
+$ repo init -b scarthgap -m default.xml -u https://github.com/filhoDaMain/pokytos.git
 ```
 This will create directory `~/repos/pokytos-yocto/.repo`, where the manifests repo is cloned and meta-data used by the tool created.
 <br/>
