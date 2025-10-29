@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-    <default sync-j="1" revision="nanbield"/>
+    <default sync-j="1" revision="scarthgap"/>
     <remote fetch="https://git.yoctoproject.org/git" name="yocto"/>
     <remote fetch="https://github.com/filhoDaMain" name="filhoDaMain"/>
     <remote fetch="https://git.openembedded.org" name="openembedded"/>
@@ -13,7 +13,4 @@
     <project remote="filhoDaMain" name="meta-pokytos-bsp" path="pokytos/meta-pokytos-bsp"/>
     <project remote="yocto" name="meta-raspberrypi" path="pokytos/meta-raspberrypi"/>
     <project remote="openembedded" name="meta-openembedded" path="pokytos/meta-openembedded"/>
-
-    <!-- This is a VSCode configuration to help with KGDB support. It's not mandatory to check out. -->
-    <project remote="filhoDaMain" name="pokytos-vscode" path=".vscode"/>
 </manifest>
