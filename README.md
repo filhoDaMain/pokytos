@@ -2,6 +2,8 @@
 
 **Pokytos** Yocto Distribution manifest repository
 
+![pokytos](./Documentation/res/pokytos.png)
+
 ### Quick reference
 **Cloning the project:**
 ```Bash
