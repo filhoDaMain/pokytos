@@ -14,7 +14,7 @@ Set **MACHINE** variable to one of the [supported devices](./03_supported_device
 
 Example (build/conf/local.conf):
 ```Bash
-MACHINE = raspberrypi3
+MACHINE = "raspi3ap"
 ```
 </br>
 
@@ -47,7 +47,7 @@ After bitbaking an image, the output is collected in `pokytos-yocto/pokytos/buil
 
 NOTE: The SD Card image has **.wic** suffix
 
-**Example:** Flash **pokytos-console-image** built for raspberrypi3:
+**Example:** Flash **pokytos-console-image** built for raspi3ap:
 
 1. Plug the SD Card into the SD Card Reader
     ```Bash
@@ -58,9 +58,9 @@ NOTE: The SD Card image has **.wic** suffix
 
 2. Write the .wic image into the SD Card
     ```Bash
-    # Example - SD Card is /dev/sda and image was built for raspberrypi3
-    $ cd ~/repos/pokytos-yocto/pokytos/build/tmp/deploy/images/raspberrypi3
-    $ sudo dd if=pokytos-console-image-raspberrypi3.rootfs.wic of=/dev/sda status=progress
+    # Example - SD Card is /dev/sda and image was built for raspi3ap
+    $ cd ~/repos/pokytos-yocto/pokytos/build/tmp/deploy/images/raspi3ap
+    $ sudo dd if=pokytos-console-image-raspi3ap.rootfs.wic of=/dev/sda status=progress
     ```
 </br>
 

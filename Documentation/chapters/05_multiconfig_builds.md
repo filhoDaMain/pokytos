@@ -26,7 +26,7 @@ MACHINEOVERRIDES:append = ":developer"
 
 Recipes which need to differente between release and developer builds can use the **developer** override.
 
-*Eg.*, the [**linux-stable**](https://github.com/filhoDaMain/meta-pokytos-bsp/blob/scarthgap/recipes-kernel/linux/linux-stable/include/raspberrypi3.inc) recipe adds extra debugging kernel configurations only when this recipe is built for a **developer** image by <ins>making use the override syntax</ins> as follows:
+*Eg.*, the [**linux-stable**](https://github.com/filhoDaMain/meta-pokytos-bsp/blob/scarthgap/recipes-kernel/linux/linux-stable/include/raspi3ap.inc) recipe adds extra debugging kernel configurations only when this recipe is built for a **developer** image by <ins>making use the override syntax</ins> as follows:
 ```bash
 SRC_URI:append:developer = "\
     file://debug.cfg \
