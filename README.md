@@ -34,9 +34,17 @@ $ runqemu pokytos-console-image nographic slirp
 <br/>
 
 # About Pokytos
-**Pokytos** is a small Yocto distribution that I started developing to store my customizations to build a Linux image suitable for Kernel hacking, learning and debugging.
+**Pokytos** is a small Yocto "platform" that I started developing to store my customizations to build a Linux image suitable for Kernel hacking, learning and debugging.
 
-Currently I've been testing this distro in QEMU and raspberrypi3.
+The following devices are tested:
+
+ 
+| MACHINE        | Device                       | Kernel                       |
+| -------------- | ---------------------------- | ---------------------------- |
+| raspi3ap       | Raspberry Pi 3 Model A Plus  | linux-stable (6.12 upstream) |
+| opizero3       | Orange Pi Zero 3             | linux-stable (6.12 upstream) |
+| qemu-raspi3ap  | QEMU virt platform           | linux-stable (6.12 upstream) |
+| qemu-opizero3  | QEMU virt platform           | linux-stable (6.12 upstream) |
 
 # How-tos
 Have a look in the current [Pokytos Reference Manual](./Documentation/README.md).
