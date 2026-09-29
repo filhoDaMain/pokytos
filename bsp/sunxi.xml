@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-    <remote alias="repo" fetch="https://github.com/linux-sunxi" name="sunxi"/>
-
     <include name="bsp/arm.xml"/>
+
+    <remote alias="repo" fetch="https://github.com/linux-sunxi" name="sunxi"/>
     <project name="meta-sunxi" path="layers/meta-sunxi" remote="sunxi" revision="5d0f71905afaa8a278ab44f47737e42131c4719f" upstream="scarthgap"/>
 </manifest>
