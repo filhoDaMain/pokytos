@@ -1,19 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-    <default sync-j="1" revision="scarthgap"/>
-    <remote fetch="https://git.yoctoproject.org/git" name="yocto"/>
-    <remote fetch="https://github.com/filhoDaMain" name="filhoDaMain"/>
-    <remote fetch="https://git.openembedded.org" name="openembedded"/>
-    <remote fetch="https://github.com/linux-sunxi" name="linux-sunxi" />
+    <default sync-j="4"/>
+    <include name="base/openembedded.xml"/>
+    <include name="base/yocto.xml"/>
+    <include name="bsp/rpi.xml"/>
+    <include name="bsp/sunxi.xml"/>
 
-    <project remote="yocto" name="poky" path="pokytos"/>
-    <project remote="filhoDaMain" name="meta-pokytos" path="pokytos/meta-pokytos">
-        <linkfile src="scripts/pokytos-bitbake-env" dest="pokytos/pokytos-env"/>
-        <linkfile src="scripts" dest="pokytos/pokytos-scripts"/>
+    <remote fetch="https://github.com/filhoDaMain" name="filhoDaMain"/>
+    <project name="meta-pokytos-bsp" path="layers/meta-pokytos-bsp" remote="filhoDaMain" revision="scarthgap" upstream="scarthgap"/>
+    <project name="meta-pokytos" path="layers/meta-pokytos" remote="filhoDaMain" revision="scarthgap" upstream="scarthgap">
+        <linkfile src="scripts/pokytos-bitbake-env" dest="init"/>
     </project>
-    <project remote="filhoDaMain" name="meta-pokytos-bsp" path="pokytos/meta-pokytos-bsp"/>
-    <project remote="yocto" name="meta-raspberrypi" path="pokytos/meta-raspberrypi"/>
-    <project remote="openembedded" name="meta-openembedded" path="pokytos/meta-openembedded"/>
-    <project remote="linux-sunxi" name="meta-sunxi" path="pokytos/meta-sunxi"/>
-    <project remote="yocto" name="meta-arm" path="pokytos/meta-arm"/>
 </manifest>

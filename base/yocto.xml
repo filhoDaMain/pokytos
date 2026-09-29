@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <remote alias="repo" fetch="https://git.yoctoproject.org" name="yocto"/>
+    <project name="meta-yocto" path="layers/meta-yocto" remote="yocto" revision="961c2399d06fbdb04ee27d06079e186d2c4a14ad" upstream="scarthgap"/>
+</manifest>
