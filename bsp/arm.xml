@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-    <remote alias="repo" fetch="https://git.yoctoproject.org" name="yocto"/>
+    <remote alias="origin" fetch="https://git.yoctoproject.org" name="yocto"/>
     <project name="meta-arm" path="layers/meta-arm" remote="yocto" revision="0a4b911d9fd63ab29c4532a907fae3282dbdcfe4" upstream="scarthgap"/>
 </manifest>
