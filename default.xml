@@ -6,7 +6,7 @@
     <include name="bsp/rpi.xml"/>
     <include name="bsp/sunxi.xml"/>
 
-    <remote fetch="https://github.com/filhoDaMain" name="filhoDaMain"/>
+    <remote alias="origin" fetch="https://github.com/filhoDaMain" name="filhoDaMain"/>
     <project name="meta-pokytos-bsp" path="layers/meta-pokytos-bsp" remote="filhoDaMain" revision="scarthgap" upstream="scarthgap"/>
     <project name="meta-pokytos" path="layers/meta-pokytos" remote="filhoDaMain" revision="scarthgap" upstream="scarthgap">
         <linkfile src="scripts/pokytos-bitbake-env" dest="init"/>
