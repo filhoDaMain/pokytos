@@ -37,6 +37,7 @@ $ runqemu nographic slirp
 
 # About Pokytos
 **Pokytos** is a small Yocto "platform" that I started developing to store my customizations to build a Linux image suitable for Kernel hacking, learning and debugging. It is pretty much a work in progress Yocto platform.
+</br>
 
 The following devices are tested:
 
@@ -50,4 +51,4 @@ The following devices are tested:
 </br>
 
 # How-tos
-Have a look in the [Pokytos Reference Manual](./Documentation/index.md) I've been working on.
+Have a look in the [Pokytos Reference Manual](./Documentation/index.md) I'm working on.
