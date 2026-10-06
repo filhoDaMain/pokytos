@@ -7,6 +7,9 @@
 ### Quick reference
 **Cloning the project:**
 ```Bash
+$ mkdir -p ~/repos/pokytos
+$ cd ~/repos/pokytos
+$
 $ repo init -b scarthgap -m default.xml -u https://github.com/filhoDaMain/pokytos.git
 $ repo sync
 ```
@@ -18,15 +21,14 @@ $ repo sync
 > Check my custom [pokytos-builder](https://github.com/filhoDaMain/pokytos-builder) set up for Yocto builds.
 
 ```Bash
-$ cd pokytos
-$ source pokytos-env
+$ source init
 $ bitbake pokytos-console-image
 ```
 <br/>
 
 **Running an image on QEMU:**
 ```Bash
-$ runqemu pokytos-console-image nographic slirp
+$ runqemu nographic slirp
 ```
 <br/>
 
@@ -34,7 +36,7 @@ $ runqemu pokytos-console-image nographic slirp
 <br/>
 
 # About Pokytos
-**Pokytos** is a small Yocto "platform" that I started developing to store my customizations to build a Linux image suitable for Kernel hacking, learning and debugging.
+**Pokytos** is a small Yocto "platform" that I started developing to store my customizations to build a Linux image suitable for Kernel hacking, learning and debugging. It is pretty much a work in progress Yocto platform.
 
 The following devices are tested:
 
@@ -45,6 +47,7 @@ The following devices are tested:
 | opizero3       | Orange Pi Zero 3             | linux-stable (6.12 upstream) |
 | qemu-raspi3ap  | QEMU virt platform           | linux-stable (6.12 upstream) |
 | qemu-opizero3  | QEMU virt platform           | linux-stable (6.12 upstream) |
+</br>
 
 # How-tos
-Have a look in the current [Pokytos Reference Manual](./Documentation/README.md).
+Have a look in the [Pokytos Reference Manual](./Documentation/index.md) I've been working on.
