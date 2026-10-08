@@ -51,4 +51,4 @@ The following devices are tested:
 </br>
 
 # How-tos
-Have a look in the [Pokytos Reference Manual](./Documentation/index.md) I'm working on.
+Have a look in the [Pokytos Reference Manual](./Documentation/README.md) I'm working on.

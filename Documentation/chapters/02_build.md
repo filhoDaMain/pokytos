@@ -1,4 +1,4 @@
-Return to [index](../index.md)
+Return to [index](../README.md)
 
 # Build image
 
@@ -20,10 +20,14 @@ The **init** script "activates" `bitbake` and enables all layers from pokytos. T
 > **First time sourcing init?**
 >
 > * Now it's time to **add your own configurations** to `conf/site.conf`.
-> * This file, inside `build` directory, is where users can add configurations which are particular to their build host machine.
+> * This file, inside `build` directory, is where users can add configurations which are particular to their build machine.
 > * For example, you can setup the sstate-cache and bitbake downloads directory paths here.
+> *
 >     ```bash
->     # E.g. build an SDK compatible with an Apple Silicon machine
+>     /build$ vim conf/site.conf
+>     ```
+>     ```bash
+>     # E.g. build an SDK compatible with an Apple Silicon machine arch
 >     SDKMACHINE ?= "aarch64"
 >     
 >     # Downloads and sstate-cache local dirs
