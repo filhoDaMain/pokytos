@@ -2,7 +2,7 @@ Return to [index](../README.md)
 
 # Build and run an image
 
-<ins>**NOTE**:</ins> From this point onwards it is assumed <ins>you are working in an environment compatible with Yocto builds</ins>, whether that means you've setup your host PC accordingly or you are <ins>**working inside pokytos-builder**</ins> container as I have recommended [before](../index.md#install-docker-image-for-yocto-builds).
+<ins>**NOTE**:</ins> From this point onwards it is assumed <ins>you are working in an environment compatible with Yocto builds</ins>, whether that means you've setup your host PC accordingly or you are <ins>**working inside pokytos-builder**</ins> container as I have recommended [before](../README.md#install-docker-image-for-yocto-builds).
 
 ---
 </br>
