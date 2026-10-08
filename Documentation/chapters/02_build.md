@@ -44,7 +44,7 @@ The **init** script "activates" `bitbake` and enables all layers from pokytos. T
 
 ### Select target device
 
-Assign to `MACHINE` variable from `conf/local.conf` the corresponding target device value.
+Assign to `MACHINE` variable from `conf/local.conf` the MACHINE value corresponding to the device you are cross-compiling for.
 
 | MACHINE        | Device                       | Kernel                       |
 | -------------- | ---------------------------- | ---------------------------- |
