@@ -2,7 +2,7 @@
 
 # Index
 1. [Initial Setup](#initial-setup)
-2. [Build image](./chapters/02_build.md)
+2. [Build and run an image](./chapters/02_build.md)
 
 </br>
 

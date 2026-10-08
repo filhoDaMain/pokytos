@@ -1,13 +1,15 @@
 Return to [index](../README.md)
 
-# Build image
+# Build and run an image
 
 <ins>**NOTE**:</ins> From this point onwards it is assumed <ins>you are working in an environment compatible with Yocto builds</ins>, whether that means you've setup your host PC accordingly or you are <ins>**working inside pokytos-builder**</ins> container as I have recommended [before](../index.md#install-docker-image-for-yocto-builds).
 
 ---
 </br>
 
-**Source environment setup script**
+## Build
+
+### Source environment setup script
 
 From pokytos rootdir
 ```bash
@@ -37,13 +39,13 @@ The **init** script "activates" `bitbake` and enables all layers from pokytos. T
 
 </br>
 
-**Select target device**
+### Select target device
 
 Assign to `MACHINE` variable from `conf/local.conf` the corresponding target device value.
 
 </br>
 
-**Build image**
+### Build image
 ```bash
 /build$ bitbake <image>
 ```
@@ -52,3 +54,7 @@ Assign to `MACHINE` variable from `conf/local.conf` the corresponding target dev
 |-------------------------------------|----------------------------------|
 |  pokytos-console-image              | A CLI-only Reference Image       |
 |  mc:developer:pokytos-console-image | Developer version of same image  |
+
+</br>
+
+## Run image
