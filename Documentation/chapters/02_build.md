@@ -2,12 +2,12 @@ Return to [index](../README.md)
 
 # Build and run an image
 
-<ins>**NOTE**:</ins> From this point onwards it is assumed <ins>you are working in an environment compatible with Yocto builds</ins>, whether that means you've setup your host PC accordingly or you are <ins>**working inside pokytos-builder**</ins> container as I have recommended [before](../README.md#install-docker-image-for-yocto-builds).
+> [!IMPORTANT]
+> From this point onwards it is assumed <ins>you are working in an environment compatible with Yocto builds</ins>, whether that means you've setup your host PC accordingly or you are <ins>**working inside pokytos-builder**</ins> container as I have recommended [before](../README.md#install-docker-image-for-yocto-builds).
 
 ---
-</br>
 
-## Build
+## Build image
 
 ### Source environment setup script
 
@@ -16,7 +16,10 @@ From pokytos rootdir
 $ source init
 ```
 
+
 The **init** script "activates" `bitbake` and enables all layers from pokytos. The `build` directory is created first time the script is sourced.
+
+</br>
 
 > [!NOTE]
 > **First time sourcing init?**

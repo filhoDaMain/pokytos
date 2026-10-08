@@ -107,4 +107,4 @@ bitbake.downloads
 bitbake.sstate
 ```
 
-If **pokytos**, **sstate-cache** and **bitbake downloads** directories were correctly mounted by `pokytos-builder.sh`, you are set to [Build first image](./chapters/02_build.md#build-image)
+If **pokytos**, **sstate-cache** and **bitbake downloads** directories were correctly mounted by `pokytos-builder.sh`, you are set to [Build first image](./chapters/02_build.md#build-and-run-an-image)
