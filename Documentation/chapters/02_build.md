@@ -46,6 +46,13 @@ The **init** script "activates" `bitbake` and enables all layers from pokytos. T
 
 Assign to `MACHINE` variable from `conf/local.conf` the corresponding target device value.
 
+| MACHINE        | Device                       | Kernel                       |
+| -------------- | ---------------------------- | ---------------------------- |
+| raspi3ap       | Raspberry Pi 3 Model A Plus  | linux-stable (6.12 upstream) |
+| opizero3       | Orange Pi Zero 3             | linux-stable (6.12 upstream) |
+| qemu-raspi3ap  | QEMU virt platform           | linux-stable (6.12 upstream) |
+| qemu-opizero3  | QEMU virt platform           | linux-stable (6.12 upstream) |
+
 </br>
 
 ### Build image
