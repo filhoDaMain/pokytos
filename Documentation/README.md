@@ -77,7 +77,7 @@ $ ./build.sh
 ```
 
 ### Install
-**If you followed the suggestions of this Wiki** and cloned **Pokytos** project into `~/repo/pokytos` and created the empty directories `~/data/bitbake.sstate` and `~/data/bitbake.downloads`, **there's nothing left to do besides running** from **pokytos-builder** local git repository:
+**If you followed the suggestions of this Wiki** and cloned **Pokytos** project into `~/repo/pokytos` and created the empty directories `~/data/bitbake.sstate` and `~/data/bitbake.downloads`, **there's nothing left to do besides running**:
 ```bash
 $ sudo ./install.sh
 ```
@@ -107,4 +107,4 @@ bitbake.downloads
 bitbake.sstate
 ```
 
-If **pokytos**, **state-cache** and **bitbake downloads** directories were correctly mounted by `pokytos-builder.sh`, you are set to [Build first image](./chapters/02_build.md#build-image)
+If **pokytos**, **sstate-cache** and **bitbake downloads** directories were correctly mounted by `pokytos-builder.sh`, you are set to [Build first image](./chapters/02_build.md#build-image)
