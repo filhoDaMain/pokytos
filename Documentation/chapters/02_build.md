@@ -18,10 +18,18 @@ The **init** script "activates" `bitbake` and enables all layers from pokytos. T
 
 > [!NOTE]
 > **First time sourcing init?**
-> Now it's time to add your own configurations to `conf/site.conf`.
-> This file, inside `build` directory, is where users can add configurations related with their own build setup.
-> For example, you can setup the sstate-cache and bitbake downloads directory paths here.
-> `vim conf/site.conf`
+>
+> * Now it's time to **add your own configurations** to `conf/site.conf`.
+> * This file, inside `build` directory, is where users can add configurations which are particular to their build host machine.
+> * For example, you can setup the sstate-cache and bitbake downloads directory paths here.
+>     ```bash
+>     # E.g. build an SDK compatible with an Apple Silicon machine
+>     SDKMACHINE ?= "aarch64"
+>     
+>     # Downloads and sstate-cache local dirs
+>     DL_DIR ?= "${HOME}/data/bitbake.downloads"
+>     SSTATE_DIR ?= "${HOME}/data/bitbake.sstate"
+>     ```
 
 </br>
 
